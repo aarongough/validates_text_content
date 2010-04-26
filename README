@@ -8,8 +8,25 @@ It is designed to help ease the moderation load associated with administering a 
 website and aims to provide instant feedback to users who might otherwise have their 
 content deleted or edited by a moderator.
 
-validates_text_content is currently used in production on several websites, however it's 
-API will likely see many changes over the next few months (as of Apr 26 2010).
+
+Examples
+========
+
+Rejects:
+    "this comment has absolutely no capitalization."
+    "This comment has no type of punctuation"
+    "Fdkjd dk dkkjhd kjdhkjd kjdhdhdl alkasla lka alk"
+    "THIS COMMENT IS ALL IN UPPERCASE. ME NO WANT!"
+    "Thiscommenthasabsolutelynospacesthereisnowaythisisgood."
+    "THIS COMMENT is MORE THAN 80% CAPITALS."
+    "THIS pERSON hAS tHEIR cAPS-lOCK oN."
+    
+Accepts:
+    "This is a very simple test comment."
+    "Supercalifragilisticexpialadocious: a super long word!"
+    "How many words can I think of that don't contain an 'e'?"
+    
+For more examples please see the test cases in 'test/validates_text_content_test.rb'.
 
 
 Usage
