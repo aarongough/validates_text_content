@@ -8,7 +8,6 @@ It is designed to help ease the moderation load associated with administering a 
 website and aims to provide instant feedback to users who might otherwise have their 
 content deleted or edited by a moderator.
 
-
 Examples
 ========
 
@@ -28,6 +27,14 @@ Accepts:
     
 For more examples please see the test cases in 'test/validates_text_content_test.rb'.
 
+Installation
+============
+
+Install using Git via script/plugin:
+    ./script/plugin install git://github.com/aarongough/validates_text_content.git
+    
+Install using SVN via script/plugin:
+    ./script/plugin install -e http://svn.github.com/aarongough/validates_text_content.git
 
 Usage
 =====
